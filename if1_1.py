@@ -1,6 +1,3 @@
-
-age = int(input('Введите ваш возраст - '))
-
 def old(age):
     if age > 100:
         return 'Не верю'
@@ -12,5 +9,5 @@ def old(age):
         return 'Добро пожаловать'
     elif age < 7:
         return 'Дет. сад, дружище'
-cool = old
+cool = old(int(input('Введите ваш возраст - ')))
 print(cool)
