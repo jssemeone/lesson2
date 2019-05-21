@@ -1,5 +1,4 @@
 age = int(input('Введите ваш возраст - '))
-
 if age > 100:
     print('Не верю')
 elif age >= 24:
