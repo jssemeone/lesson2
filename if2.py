@@ -11,6 +11,11 @@ def compare(line1, line2):
         if line2 = "learn":
             print('Вариант - 3')
 
+    variant = type(compare)
+
+    if variant = 'str':
+        print(0)
+        
 line1 = input("Введите первое слово - ")
 line2 = input("Введите второе слово - ")
 result = compare
