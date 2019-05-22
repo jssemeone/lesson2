@@ -1,20 +1,20 @@
 def compare(line1, line2):
     
     if len(line1) == len(line2):
-        print("Одинаковая величина символов - 1")
+        return 1
 
-    elif len(line1) > len(line2):
-        print("Первая длиннее - 2")
+    # elif len(line1) > len(line2):
+    #     return 2
 
-    elif len(line1) != len(line2):
+    # elif len(line1) != len(line2):
 
-        if line2 == "learn":
-            print('Вариант - 3')
+    #     if line2 == "learn":
+    #         return 3
 
-    variant = isinstance(line1, str)
+    # variant = isinstance(line1, line2, str)
 
-    if variant == True:
-        print(0)
+    # if variant == True:
+    #     return 0
 
 line1 = input("Введите первое слово - ")
 
