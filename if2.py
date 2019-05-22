@@ -8,15 +8,18 @@ def compare(line1, line2):
 
     elif len(line1) != len(line2):
 
-        if line2 = "learn":
+        if line2 == "learn":
             print('Вариант - 3')
 
-    variant = type(compare)
+    variant = isinstance(line1, str)
 
-    if variant = 'str':
+    if variant == True:
         print(0)
-        
+
 line1 = input("Введите первое слово - ")
+
 line2 = input("Введите второе слово - ")
+
 result = compare
+
 print(result)
