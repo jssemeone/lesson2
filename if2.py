@@ -1,28 +1,32 @@
-def compare(line1, line2):
-    
-    if len(line1) == len(line2):
+# Домашнее задание №1
+# Условный оператор: Сравнение строк
+# * Написать функцию, которая принимает на вход две строки
+# * Проверить, является ли то, что передано функции, строками. 
+#   Если нет - вернуть 0
+# * Если строки одинаковые, вернуть 1
+# * Если строки разные и первая длиннее, вернуть 2
+# * Если строки разные и вторая строка 'learn', возвращает 3
+# * Вызвать функцию несколько раз, передавая ей разные праметры 
+#   и выводя на экран результаты
+
+
+def main(line1, line2):
+
+    if (not isinstance(line1, str) 
+    or not isinstance(line2, str)):  
+        return 0
+   
+    if line1 == line2:
         return 1
 
     elif len(line1) > len(line2):
         return 2
 
-    elif len(line1) != len(line2):
-
-        if line2 == "learn":
-            return 3
-
-    line1 = isinstance(line1, str)
-    line2 = isinstance(line2, str)
-
-    if line1 == True:
-        if line2 == True:
-            return 0
-    
+    elif line2 == "learn":
+        return 3
+     
 
 line1 = input("Введите первое слово - ")
-
 line2 = input("Введите второе слово - ")
-
-result = compare(line1, line2)
-
+result = main(line1, line2)
 print(result)
