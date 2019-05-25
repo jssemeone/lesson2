@@ -19,7 +19,7 @@ def mid (school):
         sum_all_scores = sum_all_scores + sum(summ['scores'])
         quant_all_scores = quant_all_scores + len(summ['scores'])
     school_average = sum_all_scores / quant_all_scores
-    print('Среднее значение ошибок по школе {}'.format(school_average))
+    print('Среднее значение оценок по школе {}'.format(school_average))
     
 
     
